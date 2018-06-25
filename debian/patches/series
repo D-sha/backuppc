@@ -1,3 +1,5 @@
 #pod2man:-utf8
 #unescaped_left_brace_in_regex.patch
+test-conf.patch
 other.patch
+config.pl.diff

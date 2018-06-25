@@ -106,7 +106,7 @@ install: build
 	-rm -rf debian/backuppc/var/lib/backuppc/conf/
 	mkdir -p debian/backuppc/usr/share/backuppc/cgi-bin
 	(cd debian/backuppc/usr/share/backuppc/cgi-bin; ln -s ../image; ln -s /usr/lib/backuppc/cgi-bin/index.cgi )
-	patch --no-backup-if-mismatch -p0 < debian/config.pl.diff
+	# patch --no-backup-if-mismatch -p0 < debian/config.pl.diff
 	mkdir -p debian/backuppc/usr/share/backuppc/conf/
 	install --mode=644 debian/backuppc/etc/backuppc/config.pl debian/backuppc/usr/share/backuppc/conf/
 	rm -rf debian/backuppc/etc/backuppc/config.pl
